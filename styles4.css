@@ -35,46 +35,56 @@ body {
 }
 
 .header {
+    display: flex;
     font-size: 32px;
     font-weight: 900;
-    align-content: center;
-    padding-left: 16px;
-}
-
-a {
-    text-decoration: none;
+    align-items: center;
+    padding: 0 16px;
 }
 
 ul {
     list-style-type: none;
-    
+    margin: 0;
+    padding: 0;    
+}
+
+li {
+  margin-bottom: 16px;
 }
 
 .container {
     display: flex;
+    flex: 1;
     
 }
 
 .sidebar {
-    display: flex;
-    width: 300px;
+    flex-shrink: 0;
     padding: 16px;
-    
+
 }
 
 a {
     color: white;
     font-size: 24px;
+    text-decoration: none;
 }
 
 .middle {
     display: flex;
     flex-wrap: wrap;
-    width: 500px;
-    padding: 50px;
-    flex-grow: 0 1 auto;   
+    padding: 48px;
+    gap: 32px;
 }
 
 .card {
     padding: 48px;
+    width: 300px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
 }
